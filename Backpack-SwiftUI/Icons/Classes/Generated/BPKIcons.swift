@@ -579,4 +579,8 @@ public extension BPKIcon {
         default: return nil
         }
     }
+    
+    static func named(_ iconName: String, bundle: Bundle) -> BPKIcon {
+        BPKIcon(name: iconName, bundle: bundle)
+    }
 }
