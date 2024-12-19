@@ -20,13 +20,8 @@ import Backpack_Common
 public struct BPKIcon {
     public let name: String
     let bundle: Bundle
-    
-    init(name: String) {
-        self.name = name
-        self.bundle = BPKCommonBundle.iconsBundle
-    }
-    
-    init (name: String, bundle: Bundle) {
+
+    init (name: String, bundle: Bundle = BPKCommonBundle.iconsBundle) {
         self.name = name
         self.bundle = bundle
     }
